@@ -17,9 +17,9 @@ export default class App extends Component {
                             {/* <a className="list-group-item" href="./about.html">About</a>
                             <a className="list-group-item active" href="./home.html">Home</a> */}
 
-                            {/* React中使用？？？进行路径的切换 */} 
-                            <NavLink className="list-group-item" to="./home">Home</NavLink>
+                            {/* React中使用？？？进行路径的切换 */}
                             <NavLink className="list-group-item" to="./about">About</NavLink>
+                            <NavLink className="list-group-item" to="./home">Home</NavLink>
                         </div>
                     </div>
                     <div className="col-xs-6">
@@ -29,7 +29,7 @@ export default class App extends Component {
                                 <Routes>
                                     <Route path='*' element={<Navigate to="/home"/>}></Route>
                                     <Route path='/about' element={<About />} />
-                                    <Route path='/home/*' element={<Home />} />
+                                    <Route path='/home' element={<Home />} />
                                 </Routes>
                             </div>
                         </div>
